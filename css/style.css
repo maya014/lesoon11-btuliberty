@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .title{
 font-size: 42px;
 line-height: 56px;
@@ -15,8 +22,11 @@ font-weight: 700;
 }
 
 .formflex{
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-justify-content: space-around;
+-ms-flex-pack: distribute;
+    justify-content: space-around;
 }
 .oneblock{
   margin-left: 5%;
@@ -32,9 +42,11 @@ input[type=text] {
   width: 70%;
   padding: 12px 20px;
   margin: 4% 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 3px solid #ccc;
   -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   outline: none;
 }
@@ -59,8 +71,11 @@ background-color: black;
 
 /*.....*/
 .namber{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   text-align: center;
   padding-bottom: 5%;
   padding-top: 5%;
@@ -69,7 +84,9 @@ background-color: black;
  .fa-phone,
  .fa-map-marker{
 background-color: #5863f8;
-align-items: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 }
 .color{
   /*position: relative;*/
@@ -89,9 +106,13 @@ align-items: center;
 /*......*/
 /*...........*/
 .photos{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-top: 1%;
   padding: 2%;
 }
@@ -99,12 +120,17 @@ align-items: center;
 padding: 5%;
 }
 .d-footer{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: black;
   height: 200px;
   color: white;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .col2 a{
   margin-bottom: 10%;
@@ -114,7 +140,9 @@ padding: 5%;
   margin-bottom: 5%;
 }
 .color1{
-   align-items: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
    width: 59px;
   height: 59px;
   border-radius: 50%;
