@@ -16,7 +16,7 @@ font-weight: 700;
 
 .formflex{
 display: flex;
-padding: 1%;
+justify-content: space-around;
 }
 .oneblock{
   margin-left: 5%;
@@ -121,4 +121,9 @@ padding: 5%;
   background-color: #5863F8;
   margin: 5%;
   padding: 1%;
+}
+.col2 .fa{
+  width: 15%;
+  height:10%;
+  border-radius: 5%;
 }
